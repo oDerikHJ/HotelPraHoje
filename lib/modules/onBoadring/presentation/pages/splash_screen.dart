@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:motel/generated/l10n.dart';
-import 'introduction_screen.dart';
+//import 'introduction_screen.dart';
+import '../../../authentication/preseentation/pages/signup_page.dart';
+import '../../../explore/presentation/pages/explore_page.dart';
 import '../../../../app/ui/appTheme.dart';
 
 class SplashPage extends StatefulWidget {
@@ -60,11 +62,11 @@ class _SplashPageState extends State<SplashPage> {
                   height: 16,
                 ),
                 Text(
-                  "Bem-Vindo Ao",
+                  "Bem-Vindo ao",
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
-                    fontSize: 24,
+                    fontSize: 42,
                     color: Colors.white,
                   ),
                 ),
@@ -76,7 +78,7 @@ class _SplashPageState extends State<SplashPage> {
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
-                    fontSize: 24,
+                    fontSize: 52,
                     color: Colors.green,
                   ),
                 ),
@@ -87,7 +89,7 @@ class _SplashPageState extends State<SplashPage> {
                   "Sua solução instantânea para ",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 22,
                     color: Colors.white,
                   ),
                 ),
@@ -98,7 +100,7 @@ class _SplashPageState extends State<SplashPage> {
                   "uma estadia de última hora.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 22,
                     color: Colors.white,
                   ),
                 ),
@@ -129,7 +131,7 @@ class _SplashPageState extends State<SplashPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => IntroductionPage()),
+                              builder: (context) => ExplorePage()),
                         );
                       },
                       child: Center(
@@ -146,14 +148,23 @@ class _SplashPageState extends State<SplashPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      bottom: 24.0 + MediaQuery.of(context).padding.bottom,
-                      top: 16),
-                  child: Text(
-                    S.of(context).alreadyHaveAccountLogIn,
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.white,
+                    bottom: 24.0 + MediaQuery.of(context).padding.bottom,
+                    top: 16),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpPage()),
+                        );
+                    },
+                    child: Text(
+                      S.of(context).alreadyHaveAccountLogIn,
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),

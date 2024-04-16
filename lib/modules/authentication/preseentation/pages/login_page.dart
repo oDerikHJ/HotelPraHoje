@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:motel/app/ui/color_helper.dart';
 import 'package:motel/app/validators/login_validator.dart';
 import 'package:motel/generated/l10n.dart';
@@ -58,15 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                               SizedBox(
                                 width: 24,
                               ),
-                              Expanded(
-                                child: getFTButton(),
-                              ),
-                              SizedBox(
-                                width: 16,
-                              ),
-                              Expanded(
-                                child: getFTButton(isFacebook: false),
-                              ),
+                              
                               SizedBox(
                                 width: 24,
                               )
@@ -180,29 +172,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget getFTButton({bool isFacebook = true}) {
-    return isFacebook
-        ? RoundCornerButtonWidget(
-            onTap: () {
-              Navigator.pushNamedAndRemoveUntil(
-                  context, Routes.TabScreen, (Route<dynamic> route) => false);
-            },
-            title: S.of(context).facebook,
-            bgColor: ColorHelper.facebookColor,
-            prefixIcon:
-                Icon(FontAwesomeIcons.facebookF, size: 20, color: Colors.white),
-          )
-        : RoundCornerButtonWidget(
-            onTap: () {
-              Navigator.pushNamedAndRemoveUntil(
-                  context, Routes.TabScreen, (Route<dynamic> route) => false);
-            },
-            title: S.of(context).twitter,
-            bgColor: ColorHelper.twitterColor,
-            prefixIcon:
-                Icon(FontAwesomeIcons.twitter, size: 20, color: Colors.white),
-          );
-  }
+
 
   Widget appBar() {
     return Column(

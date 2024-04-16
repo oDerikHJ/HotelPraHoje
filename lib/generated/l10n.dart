@@ -54,14 +54,13 @@ class AppLocalizations {
   String get popularDestinations => 'Destinos populares';
   String get reviews8 => '8 avaliações';
   String get chooseDate => 'Escolha a data';
-  String get numberOfRooms => 'Escolha a data';
-  String get london => 'Escolha a data';
-  String get filter => 'Escolha a data';
-  String get explore => 'Escolha a data';
-
+  String get numberOfRooms => 'Número de quartos';
+  String get london => 'Londres';
+  String get filter => 'Filtrar';
+  String get explore => 'Explorar';
 
   String get orLogInWithEmail => 'Ou faça login com e-mail';
-  String get yourEmail => 'Seu e-mail';
+  String get yourEmail => 'E-mail';
   String get password => 'Senha';
   String get forgotYourPassword => 'Esqueceu sua senha?';
   String get login => 'Login';
@@ -72,6 +71,7 @@ class AppLocalizations {
 
   String get firstName => 'Nome';
   String get lastName => 'Sobrenome';
+  String get phone => 'Telefone';
   String get signUp => 'Inscrever-se';
   String get bySigningUpYouAgreedWithOurTermsOfnservicesAnd => 'Ao se inscrever, você concorda com nossos termos e serviços';
   String get alreadyHaveAccount => 'Já tem uma conta?';
