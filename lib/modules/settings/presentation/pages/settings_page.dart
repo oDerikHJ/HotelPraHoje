@@ -14,8 +14,8 @@ class SettingsPage extends StatefulWidget {
 
 class _SettingsPageState extends State<SettingsPage> {
   List<SettingEntity> settingsList = SettingEntity.settingsList;
-  var country = 'Australia';
-  var currency = '\$ AUD';
+  var country = 'Brasil';
+  var currency = 'R\$ Real';
 
   @override
   Widget build(BuildContext context) {

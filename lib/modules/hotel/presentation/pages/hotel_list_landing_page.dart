@@ -762,7 +762,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
             Expanded(
               child: Center(
                 child: Text(
-                  S.of(context).explore,
+                  "Pesquisar",
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 22,

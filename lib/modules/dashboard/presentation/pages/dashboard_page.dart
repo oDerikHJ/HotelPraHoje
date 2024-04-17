@@ -5,6 +5,7 @@ import '../../../../app/ui/appTheme.dart';
 import '../../../explore/presentation/pages/explore_page.dart';
 import '../../../myTrips/presentation/pages/my_trips_page.dart';
 import '../../../profile/presentation/pages/profile_page.dart';
+import '../../../hotel/presentation/pages/hotel_list_landing_page.dart';
 
 class DashboardPage extends StatefulWidget {
   @override
@@ -75,6 +76,10 @@ class _DashboardPageState extends State<DashboardPage>
           currentPage = MyTripsPage(
             animationController: animationController,
           );
+        } else if (tabType == BottomBarType.Search) {
+          currentPage = MyTripsPage(
+            animationController: animationController,
+          );
         } else if (tabType == BottomBarType.Profile) {
           currentPage = ProfilePage(
             animationController: animationController,
@@ -129,9 +134,13 @@ class _DashboardPageState extends State<DashboardPage>
                     title: "Buscar",
                     showRoundedCornerRipple: false,
                     drawable: Icon(FontAwesomeIcons.search),
-                    isSelected: tabType == BottomBarType.Trips,
+                    isSelected: tabType == BottomBarType.Search,
                     onTap: () {
-                      tabClick(BottomBarType.Trips);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HotelListLandingPage()),
+                        );
                     },
                   ),
                 ),
@@ -158,4 +167,4 @@ class _DashboardPageState extends State<DashboardPage>
   }
 }
 
-enum BottomBarType { Explore, Trips, Profile }
+enum BottomBarType { Explore, Trips, Search, Profile }

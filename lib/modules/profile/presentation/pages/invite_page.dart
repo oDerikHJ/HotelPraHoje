@@ -48,8 +48,8 @@ class _InvitePageState extends State<InvitePage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Center(
                         child: Container(
-                          width: 120,
-                          height: 40,
+                          width: 160,
+                          height: 60,
                           decoration: BoxDecoration(
                             color: AppTheme.getTheme().primaryColor,
                             borderRadius: BorderRadius.all(Radius.circular(4.0)),

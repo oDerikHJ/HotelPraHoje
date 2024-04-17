@@ -3,7 +3,7 @@ import 'package:motel/generated/l10n.dart';
 import 'package:motel/modules/_common/widget/selectable_title_widget.dart';
 import '../../../../app/ui/appTheme.dart';
 import 'favorite_trips_page.dart';
-import 'finished_trips_page.dart';
+//import 'finished_trips_page.dart';
 import 'upcoming_trips_page.dart';
 
 class MyTripsPage extends StatefulWidget {
@@ -20,7 +20,7 @@ class _MyTripsPageState extends State<MyTripsPage>
   AnimationController? tabAnimationController;
 
   Widget currentPage = Container();
-  TopBarType topBarType = TopBarType.Upcomming;
+  TopBarType topBarType = TopBarType.Finished;
 
   @override
   void initState() {
@@ -81,12 +81,8 @@ class _MyTripsPageState extends State<MyTripsPage>
     if (tabType != topBarType) {
       topBarType = tabType;
       tabAnimationController!.reverse().then((f) {
-        if (tabType == TopBarType.Upcomming) {
+        if (tabType == TopBarType.Finished) {
           currentPage = UpcomingTripsPage(
-            animationController: tabAnimationController,
-          );
-        } else if (tabType == TopBarType.Finished) {
-          currentPage = FinishedTripsPage(
             animationController: tabAnimationController,
           );
         } else if (tabType == TopBarType.Favorites) {
@@ -111,15 +107,6 @@ class _MyTripsPageState extends State<MyTripsPage>
           children: <Widget>[
             Row(
               children: <Widget>[
-                Expanded(
-                  child: SelectableTitleWidget(
-                    title: S.of(context).upcoming,
-                    isSelected: tabType == TopBarType.Upcomming,
-                    onTap: () {
-                      tabClick(TopBarType.Upcomming);
-                    },
-                  ),
-                ),
                 Expanded(
                   child: SelectableTitleWidget(
                     title: S.of(context).finished,
@@ -169,4 +156,4 @@ class _MyTripsPageState extends State<MyTripsPage>
   }
 }
 
-enum TopBarType { Upcomming, Finished, Favorites }
+enum TopBarType { Finished, Favorites }

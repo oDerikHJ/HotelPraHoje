@@ -100,15 +100,15 @@ class HotelEntity {
     ),
     HotelEntity(
       imagePath: 'assets/images/popular_2.jpg',
-      titleTxt: 'Spain',
+      titleTxt: 'Espanha',
     ),
     HotelEntity(
       imagePath: 'assets/images/popular_3.jpg',
-      titleTxt: 'Vernazza',
+      titleTxt: 'Veneza',
     ),
     HotelEntity(
       imagePath: 'assets/images/popular_4.jpg',
-      titleTxt: 'London',
+      titleTxt: 'Londres',
     ),
     HotelEntity(
       imagePath: 'assets/images/popular_5.jpg',
@@ -116,7 +116,7 @@ class HotelEntity {
     ),
     HotelEntity(
       imagePath: 'assets/images/popular_6.jpg',
-      titleTxt: 'Diamond Head',
+      titleTxt: 'Praia',
     ),
   ];
 

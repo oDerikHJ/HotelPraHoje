@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:motel/app/ui/color_helper.dart';
 import 'package:motel/generated/l10n.dart';
-import 'package:motel/modules/_common/widget/round_corners_button_widget.dart';
 import 'package:motel/modules/explore/presentation/widget/explore_item_header_widget.dart';
 import 'package:motel/modules/explore/presentation/widget/explore_slider_widget.dart';
 import 'package:motel/modules/explore/presentation/widget/popular_destination_list_widget.dart';
 import 'package:motel/modules/hotel/presentation/widget/hotel_row_three_widget.dart';
 import '../../../../app/ui/appTheme.dart';
 import '../../../hotel/domain/entities/hotel_entity.dart';
-import '../../../hotel/presentation/pages/hotel_list_landing_page.dart';
 import '../../../hotel/presentation/pages/hotel_details_page.dart';
-import '../../../search/presentation/pages/search_page.dart';
+import '../../../hotel/presentation/pages/hotel_list_landing_page.dart';
 
 class ExplorePage extends StatefulWidget {
   final AnimationController? animationController;
@@ -123,9 +120,6 @@ class _ExplorePageState extends State<ExplorePage>
                   // sliderUI with 3 images are moving
                   _sliderUI(),
 
-                  // viewHotels Button UI for click event
-                  _viewHotelsButton(_animationController),
-
                   //just gradient for see the time and battry Icon on "TopBar"
                   Positioned(
                     top: 0,
@@ -154,50 +148,6 @@ class _ExplorePageState extends State<ExplorePage>
                 ],
               ),
             ),
-          ),
-        );
-      },
-    );
-  }
-
-  Widget _viewHotelsButton(AnimationController _animationController) {
-    return AnimatedBuilder(
-      animation: _animationController,
-      builder: (BuildContext context, Widget? child) {
-        var opecity = 1.0 -
-            (_animationController.value > 0.64
-                ? 1.0
-                : _animationController.value);
-        return Positioned(
-          left: 0,
-          right: 0,
-          top: 0,
-          height: sliderImageHeight * (1.0 - _animationController.value),
-          child: Stack(
-            children: <Widget>[
-              Positioned(
-                bottom: 32,
-                left: 24,
-                child: Opacity(
-                  opacity: opecity,
-                  child: RoundCornerButtonWidget(
-                    title: S.of(context).viewHotels,
-                    bgColor: ColorHelper.primaryColor,
-                    onTap: () {
-                      if (opecity != 0) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => HotelListLandingPage()),
-                        );
-                      }
-                    },
-                    padding:
-                        EdgeInsets.only(left: 24, right: 24, top: 8, bottom: 8),
-                  ),
-                ),
-              ),
-            ],
           ),
         );
       },
@@ -294,7 +244,7 @@ class _ExplorePageState extends State<ExplorePage>
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => SearchPage(),
+                        builder: (context) => HotelListLandingPage(),
                         fullscreenDialog: true),
                   );
                 },

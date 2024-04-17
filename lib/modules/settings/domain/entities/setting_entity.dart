@@ -29,69 +29,69 @@ class SettingEntity {
 
   static List<SettingEntity> userSettingsList = [
     SettingEntity(
-      titleTxt: 'Change password',
+      titleTxt: 'Trocar Senha',
       isSelected: false,
       iconData: FontAwesomeIcons.lock,
     ),
     SettingEntity(
-      titleTxt: 'Invite Friends',
+      titleTxt: 'Compartilhar',
       isSelected: false,
       iconData: FontAwesomeIcons.userFriends,
     ),
     SettingEntity(
-      titleTxt: 'Credits & Coupons',
+      titleTxt: 'Créditos e Cupons',
       isSelected: false,
       iconData: FontAwesomeIcons.gift,
     ),
     SettingEntity(
-      titleTxt: 'Help Center',
+      titleTxt: 'Central De Ajuda',
       isSelected: false,
       iconData: FontAwesomeIcons.infoCircle,
     ),
     SettingEntity(
-      titleTxt: 'Payments',
+      titleTxt: 'Pagamentos',
       isSelected: false,
       iconData: FontAwesomeIcons.wallet,
     ),
     SettingEntity(
-      titleTxt: 'Settings',
+      titleTxt: 'Configuracoes',
       isSelected: false,
       iconData: FontAwesomeIcons.cog,
     )
   ];
   static List<SettingEntity> settingsList = [
     SettingEntity(
-      titleTxt: 'Notifications',
+      titleTxt: 'Notificacoes',
       isSelected: false,
       iconData: FontAwesomeIcons.solidBell,
     ),
     SettingEntity(
-      titleTxt: 'Country',
+      titleTxt: 'Pais',
       isSelected: false,
       iconData: FontAwesomeIcons.userFriends,
     ),
     SettingEntity(
-      titleTxt: 'Currency',
+      titleTxt: 'Moeda',
       isSelected: false,
       iconData: FontAwesomeIcons.gift,
     ),
     SettingEntity(
-      titleTxt: 'Terms of Services',
+      titleTxt: 'Termos e servicos',
       isSelected: false,
       iconData: Icons.keyboard_arrow_right,
     ),
     SettingEntity(
-      titleTxt: 'Privacy Policy',
+      titleTxt: 'Politica de privacidade',
       isSelected: false,
       iconData: Icons.keyboard_arrow_right,
     ),
     SettingEntity(
-      titleTxt: 'Give Us Feedbacks',
+      titleTxt: 'Dar Feedback',
       isSelected: false,
       iconData: Icons.keyboard_arrow_right,
     ),
     SettingEntity(
-      titleTxt: 'Log out',
+      titleTxt: 'Deslogar',
       isSelected: false,
       iconData: Icons.keyboard_arrow_right,
     )
@@ -154,76 +154,76 @@ class SettingEntity {
 
   static List<SettingEntity> helpSearchList = [
     SettingEntity(
-      titleTxt: 'Paying for a reservation',
+      titleTxt: 'Pagamento de uma reserva',
       subTxt: "",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "How do I cancel my rooms reservation?",
+      subTxt: "Como faço para cancelar minha reserva de quartos?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "What methods pf payment does Roome accept?",
+      subTxt: "Quais métodos de pagamento o Roome aceita?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "When am I charged for a reservation?",
+      subTxt: "Quando sou cobrado por uma reserva?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "How do I edit or remove a payment method?",
+      subTxt: "Como editar ou remover um método de pagamento?",
     ),
     SettingEntity(
-      titleTxt: 'Trust and safety',
+      titleTxt: 'Confiança e segurança',
       subTxt: "",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "I'm a guest. What are some safety tips I can follow?",
+      subTxt: "Sou um hóspede. Quais são algumas dicas de segurança que posso seguir?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "When am I charged for a reservation?",
+      subTxt: "Quando sou cobrado por uma reserva?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "How do I edit or remove a payment method?",
+      subTxt: "Como editar ou remover um método de pagamento?",
     ),
     SettingEntity(
-      titleTxt: 'Paying for a reservation',
+      titleTxt: 'Pagamento de uma reserva',
       subTxt: "",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "How do I cancel my rooms reservation?",
+      subTxt: "Como faço para cancelar minha reserva de quartos?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "What methods pf payment does Roome accept?",
+      subTxt: "Quais métodos de pagamento o Roome aceita?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "When am I charged for a reservation?",
+      subTxt: "Quando sou cobrado por uma reserva?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "How do I edit or remove a payment method?",
+      subTxt: "Como editar ou remover um método de pagamento?",
     ),
     SettingEntity(
-      titleTxt: 'Trust and safety',
+      titleTxt: 'Confiança e segurança',
       subTxt: "",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "I'm a guest. What are some safety tips I can follow?",
+      subTxt: "Sou um hóspede. Quais são algumas dicas de segurança que posso seguir?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "When am I charged for a reservation?",
+      subTxt: "Quando sou cobrado por uma reserva?",
     ),
     SettingEntity(
       titleTxt: '',
-      subTxt: "How do I edit or remove a payment method?",
+      subTxt: "Como editar ou remover um método de pagamento?",
     ),
   ];
 
@@ -231,43 +231,43 @@ class SettingEntity {
     SettingEntity(
       titleTxt: "",
       subTxt:
-          "You can cancel a reservation any time before Or during your trip. To cancel a reservation:",
+          "Você pode cancelar uma reserva a qualquer momento antes ou durante sua viagem. Para cancelar uma reserva:",
     ),
     SettingEntity(
       titleTxt: "",
       subTxt:
-          "GO to Trips and choose yotr trip\nClick Your home reservation\nClick Modify reservation",
+          "Vá para Viagens e escolha sua viagem\nClique na sua reserva de casa\nClique em Modificar reserva",
     ),
     SettingEntity(
       titleTxt: "",
       subTxt:
-          "You'll be taken to a new page where you either change or cancel your reservation. Click the Next button under Cancel reservation to Start the cancellation process.",
+          "Você será levado para uma nova página onde poderá alterar ou cancelar sua reserva. Clique no botão Próximo embaixo de Cancelar reserva para iniciar o processo de cancelamento.",
     ),
     SettingEntity(
       titleTxt: "",
       subTxt:
-          "If you cancel, your refund Will be determined by your host'r cancellation policy. We'll show your refund breakdown before you finalize the cancellation.",
+          "Se você cancelar, o reembolso será determinado pela política de cancelamento do seu anfitrião. Mostraremos a divisão do seu reembolso antes de finalizar o cancelamento.",
     ),
     SettingEntity(
       titleTxt: "",
-      subTxt: "Give feedback",
+      subTxt: "Dar feedback",
       isSelected: true,
     ),
     SettingEntity(
-      titleTxt: "Related articles",
+      titleTxt: "Artigos relacionados",
       subTxt: "",
     ),
     SettingEntity(
       titleTxt: "",
-      subTxt: "Can I change a reservation as a guest?",
+      subTxt: "Posso alterar uma reserva como hóspede?",
     ),
     SettingEntity(
       titleTxt: "",
-      subTxt: "HOW do I cancel a reservation request?",
+      subTxt: "Como cancelo uma solicitação de reserva?",
     ),
     SettingEntity(
       titleTxt: "",
-      subTxt: "What is the Resolution Center?",
+      subTxt: "O que é o Centro de Resoluções?",
     ),
   ];
 
@@ -277,24 +277,24 @@ class SettingEntity {
       subTxt: "",
     ),
     SettingEntity(
-      titleTxt: 'UserName',
+      titleTxt: 'Nome de usuário',
       subTxt: "Amanda Jane",
     ),
     SettingEntity(
-      titleTxt: 'Email',
+      titleTxt: 'E-mail',
       subTxt: "amanda@gmail.com",
     ),
     SettingEntity(
-      titleTxt: 'Phone',
+      titleTxt: 'Telefone',
       subTxt: "+65 1122334455",
     ),
     SettingEntity(
-      titleTxt: 'Date of birth',
-      subTxt: "20, Aug, 1990",
+      titleTxt: 'Nascimento',
+      subTxt: "20 de agosto de 1990",
     ),
     SettingEntity(
-      titleTxt: 'Address',
-      subTxt: "123 Royal Street, New York",
+      titleTxt: 'Endereço',
+      subTxt: "123 Royal Street, Nova York",
     ),
   ];
 }
