@@ -51,7 +51,7 @@ class AppLocalizations {
 
   // Aqui você define suas strings traduzidas
 
-  String get popularDestinations => 'Destinos populares';
+  String get popularDestinations => 'Principais Destinos';
   String get reviews8 => '8 avaliações';
   String get chooseDate => 'Escolha a data';
   String get numberOfRooms => 'Número de quartos';
@@ -80,7 +80,7 @@ class AppLocalizations {
   String get trips => 'Viagens';
   String get profile => 'Perfil';
 
-  String get bestDeals => 'Melhores ofertas';
+  String get bestDeals => 'Lugares populares';
   String get viewAll => 'Ver tudo';
   String get viewHotels => 'Ver hotéis';
   String get whereAreYouGoing => 'Para onde você vai?';
