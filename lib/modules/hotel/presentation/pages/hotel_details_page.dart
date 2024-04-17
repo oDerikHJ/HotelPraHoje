@@ -28,9 +28,9 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
     with TickerProviderStateMixin {
   ScrollController scrollController = ScrollController(initialScrollOffset: 0);
   var hotelText1 =
-      "Featuring a fitness center, Grand Royale Park Hote is located in Sweden, 4.7 km frome National Museum...";
+    "Apresentando uma academia, o Grand Royale Park Hotel está localizado na Suécia, a 4,7 km do Museu Nacional...";
   var hotelText2 =
-      "Featuring a fitness center, Grand Royale Park Hote is located in Sweden, 4.7 km frome National Museum a fitness center, Grand Royale Park Hote is located in Sweden, 4.7 km frome National Museum a fitness center, Grand Royale Park Hote is located in Sweden, 4.7 km frome National Museum";
+      "Apresentando uma academia, o Grand Royale Park Hotel está localizado na Suécia, a 4,7 km do Museu Nacional uma academia, o Grand Royale Park Hotel está localizado na Suécia, a 4,7 km do Museu Nacional uma academia, o Grand Royale Park Hotel está localizado na Suécia, a 4,7 km do Museu Nacional";
   bool isFav = false;
   bool isReadLess = false;
   AnimationController? animationController;
@@ -601,7 +601,7 @@ class _HotelDetailsPageState extends State<HotelDetailsPage>
                   ),
                   Expanded(
                     child: Text(
-                      "${widget.hotelData!.dist.toStringAsFixed(1)} km to city",
+                      "${widget.hotelData!.dist.toStringAsFixed(1)} km",
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontSize: 14,

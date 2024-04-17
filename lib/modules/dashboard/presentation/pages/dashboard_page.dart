@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:motel/generated/l10n.dart';
 import 'package:motel/modules/_common/widget/selectable_title_widget.dart';
 import '../../../../app/ui/appTheme.dart';
 import '../../../explore/presentation/pages/explore_page.dart';
@@ -98,49 +97,62 @@ class _DashboardPageState extends State<DashboardPage>
           ),
         ],
       ),
-      child: Column(
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: SelectableTitleWidget(
-                  title: S.of(context).explore,
-                  showRoundedCornerRipple: false,
-                  drawable: Icon(FontAwesomeIcons.search),
-                  isSelected: tabType == BottomBarType.Explore,
-                  onTap: () {
-                    tabClick(BottomBarType.Explore);
-                  },
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: SelectableTitleWidget(
+                    title: "Explorar",
+                    showRoundedCornerRipple: false,
+                    drawable: Icon(FontAwesomeIcons.home),
+                    isSelected: tabType == BottomBarType.Explore,
+                    onTap: () {
+                      tabClick(BottomBarType.Explore);
+                    },
+                  ),
                 ),
-              ),
-              Expanded(
-                child: SelectableTitleWidget(
-                  title: S.of(context).trips,
-                  showRoundedCornerRipple: false,
-                  drawable: Icon(FontAwesomeIcons.heart),
-                  isSelected: tabType == BottomBarType.Trips,
-                  onTap: () {
-                    tabClick(BottomBarType.Trips);
-                  },
+                Expanded(
+                  child: SelectableTitleWidget(
+                    title: "Favoritos",
+                    showRoundedCornerRipple: false,
+                    drawable: Icon(FontAwesomeIcons.heart),
+                    isSelected: tabType == BottomBarType.Trips,
+                    onTap: () {
+                      tabClick(BottomBarType.Trips);
+                    },
+                  ),
                 ),
-              ),
-              Expanded(
-                child: SelectableTitleWidget(
-                  title: S.of(context).profile,
-                  showRoundedCornerRipple: false,
-                  drawable: Icon(FontAwesomeIcons.user),
-                  isSelected: tabType == BottomBarType.Profile,
-                  onTap: () {
-                    tabClick(BottomBarType.Profile);
-                  },
+                Expanded(
+                  child: SelectableTitleWidget(
+                    title: "Buscar",
+                    showRoundedCornerRipple: false,
+                    drawable: Icon(FontAwesomeIcons.search),
+                    isSelected: tabType == BottomBarType.Trips,
+                    onTap: () {
+                      tabClick(BottomBarType.Trips);
+                    },
+                  ),
                 ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).padding.bottom,
-          )
-        ],
+                Expanded(
+                  child: SelectableTitleWidget(
+                    title: "Perfil",
+                    showRoundedCornerRipple: false,
+                    drawable: Icon(FontAwesomeIcons.user),
+                    isSelected: tabType == BottomBarType.Profile,
+                    onTap: () {
+                      tabClick(BottomBarType.Profile);
+                    },
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).padding.bottom,
+            )
+          ],
+        ),
       ),
     );
   }

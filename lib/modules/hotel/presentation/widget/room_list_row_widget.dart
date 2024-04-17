@@ -170,7 +170,7 @@ class _RoomListRowWidgetState extends State<RoomListRowWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   Text(
-                                    S.of(context).moreDetails,
+                                    "Detalhes",
                                     style: TextStyle(
                                       // color: AppTheme.getTheme().backgroundColor,
                                       fontWeight: FontWeight.w600,

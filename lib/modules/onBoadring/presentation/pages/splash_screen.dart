@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:motel/generated/l10n.dart';
 //import 'introduction_screen.dart';
 import '../../../authentication/preseentation/pages/signup_page.dart';
-import '../../../explore/presentation/pages/explore_page.dart';
+import '../../../dashboard/presentation/pages/dashboard_page.dart';
 import '../../../../app/ui/appTheme.dart';
 
 class SplashPage extends StatefulWidget {
@@ -131,7 +131,7 @@ class _SplashPageState extends State<SplashPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ExplorePage()),
+                              builder: (context) => DashboardPage()),
                         );
                       },
                       child: Center(

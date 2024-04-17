@@ -499,7 +499,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
                           height: 8,
                         ),
                         Text(
-                          "$room Room - $ad Adults",
+                          "$room Quarto - $ad Adultos",
                           style: TextStyle(
                             fontWeight: FontWeight.w100,
                             fontSize: 16,
@@ -637,7 +637,7 @@ class _HotelListLandingPageState extends State<HotelListLandingPage>
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "530 hotels found",
+                      "530 hoteis encontrados",
                       style: TextStyle(
                         fontWeight: FontWeight.w100,
                         fontSize: 16,

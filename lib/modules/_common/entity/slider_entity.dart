@@ -7,38 +7,38 @@ class SliderData {
 
   static List<SliderData> introSliderData = [
     SliderData(
-      titleText: 'Plan your trips',
-      subText: 'book one of your unique hotel to\nescape the ordinary',
+      titleText: 'Planeje suas viagens',
+      subText: 'reserve um dos nossos hotéis exclusivos para\nfugir do comum',
       assetsImage: 'assets/images/introduction1.png',
     ),
     SliderData(
-      titleText: 'Find best deals',
+      titleText: 'Encontre as melhores ofertas',
       subText:
-          'Find deals for any season from cosy\ncountry homes to city flats',
+          'Encontre ofertas para qualquer estação, de aconchegantes\ncasas de campo a apartamentos na cidade',
       assetsImage: 'assets/images/introduction2.png',
     ),
     SliderData(
-      titleText: 'Best travelling all time',
+      titleText: 'Melhores viagens de todos os tempos',
       subText:
-          'Find deals for any season from cosy\ncountry homes to city flats',
+          'Encontre ofertas para qualquer estação, de aconchegantes\ncasas de campo a apartamentos na cidade',
       assetsImage: 'assets/images/introduction3.png',
     )
   ];
 
   static List<SliderData> exploreSliderData = [
     SliderData(
-      titleText: 'Cape Town',
-      subText: 'Extraordinary five-star\noutdoor activites',
+      titleText: 'Cidade do Cabo',
+      subText: 'Atividades ao ar livre extraordinárias',
       assetsImage: 'assets/images/explore_2.jpg',
     ),
     SliderData(
-      titleText: 'Find best deals',
-      subText: 'Extraordinary five-star\noutdoor activites',
+      titleText: 'Encontre as melhores ofertas',
+      subText: 'Atividades ao ar livre extraordinárias',
       assetsImage: 'assets/images/explore_1.jpg',
     ),
     SliderData(
-      titleText: 'Find best deals',
-      subText: 'Extraordinary five-star\noutdoor activites',
+      titleText: 'Encontre as melhores ofertas',
+      subText: 'Atividades ao ar livre extraordinárias',
       assetsImage: 'assets/images/explore_3.jpg',
     )
   ];

@@ -94,11 +94,13 @@ class _RoomRangeSelectionWidgetState extends State<RoomRangeSelectionWidget>
                           mainAxisSize: MainAxisSize.min,
                           children: <Widget>[
                             getRowView(
-                                "Number of Rooms", "", room, PopupTextType.no),
+                                "Numero de Quartos", "", room, PopupTextType.no),
                             getRowView(
-                                "Adult", " (Aged 18+)", ad, PopupTextType.ad),
+                                "Adultos", " (Idade 18+)", ad, PopupTextType.ad),
                             getRowView(
-                                "Children", " (0-17)", ch, PopupTextType.ch),
+                                "Criancas", " (0-17)", ch, PopupTextType.ch),
+                            getRowView(
+                                "Animais", "", ch, PopupTextType.ch),
                             Padding(
                               padding: const EdgeInsets.only(
                                   left: 16, right: 16, bottom: 16, top: 24),

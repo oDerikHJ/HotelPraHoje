@@ -141,7 +141,7 @@ class HotelRowTwoWidget extends StatelessWidget {
                   color: AppTheme.getTheme().primaryColor,
                 ),
                 Text(
-                  " ${hotelData!.dist.toStringAsFixed(1)} km to city",
+                  " ${hotelData!.dist.toStringAsFixed(1)} km",
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       fontSize: 14, color: Colors.grey.withOpacity(0.8)),

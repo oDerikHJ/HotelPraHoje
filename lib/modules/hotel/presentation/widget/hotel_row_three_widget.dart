@@ -115,7 +115,7 @@ class HotelRowThreeWidget extends StatelessWidget {
                                                           .primaryColor,
                                                     ),
                                                     Text(
-                                                      " ${hotelData!.dist.toStringAsFixed(1)} km to city",
+                                                      " ${hotelData!.dist.toStringAsFixed(1)} km",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       style: TextStyle(
