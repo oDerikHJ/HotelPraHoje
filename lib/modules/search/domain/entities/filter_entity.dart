@@ -9,42 +9,42 @@ class FilterEntity {
 
   static List<FilterEntity> popularFList = [
     FilterEntity(
-      titleTxt: 'Free Breakfast',
+      titleTxt: 'Café da manha',
       isSelected: false,
     ),
     FilterEntity(
-      titleTxt: 'Free Parking',
+      titleTxt: 'Estacionamento',
       isSelected: false,
     ),
     FilterEntity(
-      titleTxt: 'Pool',
+      titleTxt: 'Psicina',
       isSelected: true,
     ),
     FilterEntity(
-      titleTxt: 'Pet Friendly',
+      titleTxt: 'Aceita Animais',
       isSelected: false,
     ),
     FilterEntity(
-      titleTxt: 'Free wifi',
+      titleTxt: 'Wi-fi',
       isSelected: false,
     ),
   ];
 
   static List<FilterEntity> accomodationList = [
     FilterEntity(
-      titleTxt: 'All',
+      titleTxt: 'Todos',
       isSelected: false,
     ),
     FilterEntity(
-      titleTxt: 'Apartment',
+      titleTxt: 'Apartamento',
       isSelected: false,
     ),
     FilterEntity(
-      titleTxt: 'Home',
+      titleTxt: 'Casa',
       isSelected: true,
     ),
     FilterEntity(
-      titleTxt: 'Villa',
+      titleTxt: 'Vila',
       isSelected: false,
     ),
     FilterEntity(

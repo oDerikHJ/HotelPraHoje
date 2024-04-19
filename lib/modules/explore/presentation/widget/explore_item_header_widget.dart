@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:motel/app/ui/appTheme.dart';
+import '../../../hotel/presentation/pages/hotel_list_landing_page.dart';
 
 class ExploreItemHeaderWidget extends StatelessWidget {
   final String titleTxt;
@@ -49,7 +50,11 @@ class ExploreItemHeaderWidget extends StatelessWidget {
                         borderRadius:
                             BorderRadius.all(Radius.circular(4.0)),
                         onTap: () {
-                          click!();
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HotelListLandingPage()),
+                            );
                         },
                         child: Padding(
                           padding: const EdgeInsets.only(left: 8),
